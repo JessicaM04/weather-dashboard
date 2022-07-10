@@ -6,13 +6,48 @@
   padding: 20px;
 }
 
+.div-direction {
+  display: flex;
+  flex-direction: column;
+}
 .search-container {
+  display: flex;
+}
+
+.search-parameters {
   border-bottom: 3px solid gray;
+  margin-right: 20px;
 }
 
 .input{
   border-radius: 3px;
   margin: 10px;
   height: 30px;
-  width: 275px;
 }
+
+.search {
+  margin: 10px;
+}
+
+.future-weather {
+  background-color: #1c3763;
+  color: white;
+  margin: 10px 20px 0 0;
+  padding: 10px;
+}
+
+.search-results {
+  display: flex row;
+}
+
+.city-weather-info {
+  border: 3px solid gray;
+  margin: 10px;
+  width: 75%;
+  padding: 10px;
+}
+
+.five-day-results {
+  display: flex;
+}
+
