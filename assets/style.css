@@ -1,0 +1,18 @@
+.header {
+  background: linear-gradient(to left, #000099 0%, #33ccff 100%);
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+  padding: 20px;
+}
+
+.search-container {
+  border-bottom: 3px solid gray;
+}
+
+.input{
+  border-radius: 3px;
+  margin: 10px;
+  height: 30px;
+  width: 275px;
+}
