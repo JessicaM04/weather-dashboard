@@ -13,19 +13,19 @@
     <div id="leftSection" class="div-direction">
       <div class="search-parameters div-direction">
         <h1>Search for a City:</h1>
-        <input id="cityInput" class="input"/>
-        <button id="searchBtn" class="search">Search</button>
+        <input id="cityInput" class="input" value="Cary"/>
+        <button id="searchBtn" class="search" onclick="fetchCityWeather()">Search</button>
       </div>
       <div id="searchHistory">
       </div>
     </div>
     <div id="rightSection" class="search-results div-direction">
       <div id="cityWeatherInfo" class="city-weather-info">
-        <h1>Atlanta (3/30/2021)</h1>
-        <h3>Temp: 74.01°F</h3>
-        <h3>Wind: 6.67 MPH</h3>
-        <h3>Humidity: 46 %</h3>
-        <h3>UV Index: 0.47</h3>
+        <h1 id="cityDate"> </h1>
+        <h3 id="temp">Temp: </h3>
+        <h3 id="wind">Wind: </h3>
+        <h3 id="humidity">Humidity: </h3>
+        <h3 id="uvIndex">UV Index: </h3>
       </div>
       <h1>5-Day Forecast:</h1>
       <div id="fiveDayForecast" class="five-day-results">
@@ -69,6 +69,6 @@
    
   </div>
   
-  
+  <script src="./assets/script.js"></script>
 </body>
 </html>
