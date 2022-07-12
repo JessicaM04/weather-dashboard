@@ -1,4 +1,5 @@
 var city = "";
+
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
@@ -16,12 +17,8 @@ function fetchCityWeather() {
 
       // this is city and date
       var cityName = res.address;
-      var myDate = new Date(res.currentConditions.datetimeEpoch *1000);
-      myDate.toLocaleString();
-      var date = myDate.toLocaleString();
-      var dateArray = date.split(",");
-      var formattedDate = dateArray[0];
-      console.log(formattedDate);
+
+      var formattedDate = getFormattedDate(res.currentConditions.datetimeEpoch)
       var cityDate = cityName + " (" + formattedDate + ")"
       document.getElementById("cityDate").innerHTML = cityDate;
 
@@ -40,9 +37,40 @@ function fetchCityWeather() {
       // this is uv index
       var uvIndex = res.currentConditions.uvindex;
       document.getElementById("uvIndex").innerHTML = "UV Index: " + uvIndex;
+
+      // future date
+      var futureDate = res.days
+      var days = futureDate.slice(1,6);
+      document.querySelector("futureDate0");
+      for (var i = 0; i < days.length; i++) {
+        // "futureDate" + i
+        var day = days[i]; 
+        var temp = day.temp;
+        var wind = day.windspeed;
+        var humidity = day.humidity;
+
+        document.getElementById("futureDate" + i).innerHTML = getFormattedDate(day.datetimeEpoch);
+
+
+      }
+      
+
+
     })
+
+     
+
+
     .catch(error => console.log('error', error));
+ 
 };
+
+function getFormattedDate(epochDate) {
+  var myDate = new Date(epochDate *1000);
+  var date = myDate.toLocaleString();
+  var dateArray = date.split(",");
+  return dateArray[0];
+}
 
 
 
