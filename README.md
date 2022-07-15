@@ -11,3 +11,8 @@ Link to GitHub:
 https://github.com/JessicaM04/weather-dashboard
 
 
+Link to deployed website:
+
+https://jessicam04.github.io/weather-dashboard/
+
+
