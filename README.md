@@ -7,3 +7,7 @@ Screenshot:
 ![Screen Shot 2022-07-14 at 10 19 37 PM](https://user-images.githubusercontent.com/103011054/179133827-e910eb3c-be4e-4cb3-b5e3-05aa7fac59ac.png)
 
 Link to GitHub: 
+
+https://github.com/JessicaM04/weather-dashboard
+
+
